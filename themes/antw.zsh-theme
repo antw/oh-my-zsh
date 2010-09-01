@@ -8,10 +8,10 @@ if [ "$(whoami)" = "root" ]; then NCOLOR="red"; else NCOLOR="white"; fi
 
 if [[ -n $SSH_CONNECTION ]]; then
   # SSH connections include the hostname.
-  PROMPT="%{$fg[$NCOLOR]%}%n@%m%{$reset_color%}:%{$fg[blue]%}%3c/%{$reset_color%} %(!.#.$) "
+  PROMPT="%{$fg[$NCOLOR]%}%n@%m%{$reset_color%}:%{$fg[blue]%}%3c%{$reset_color%} %(!.#.$) "
   RPROMPT=''
 else
-  PROMPT="%{$fg[blue]%}%3c/%{$reset_color%} %(!.#.$) "
+  PROMPT="%{$fg[blue]%}%3c%{$reset_color%} %(!.#.$) "
   RPROMPT='$(git_prompt_info)'
 fi
 
