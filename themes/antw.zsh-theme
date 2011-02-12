@@ -4,7 +4,7 @@
 #  * Left prompt from the Clean theme, with at most three path segments.
 #
 
-if [ "$(whoami)" = "root" ]; then NCOLOR="red"; else NCOLOR="white"; fi
+if [ "$(whoami)" = "root" ]; then NCOLOR="red"; else NCOLOR="yellow"; fi
 
 if [[ -n $SSH_CONNECTION ]]; then
   # SSH connections include the hostname.
